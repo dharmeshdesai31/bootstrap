@@ -1,0 +1,36 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
+
+- url: /about.html
+  static_files: www/about.html
+  upload: www/about.html
+
+- url: /blog.html
+  static_files: www/blog.html
+  upload: www/blog.html
+
+- url: /contact.html
+  static_files: www/contact.html
+  upload: www/contact.html
+
+- url: /portfolio.html
+  static_files: www/portfolio.html
+  upload: www/portfolio.html
+
+- url: /services.html
+  static_files: www/services.html
+  upload: www/services.html
+
+- url: /skill.html
+  static_files: www/skill.html
+  upload: www/skill.html
+
+- url: /(.*)
+  static_files: www/index.html
+  upload: www/index.html
